@@ -1,0 +1,88 @@
+ .all {
+   display: block-inline;
+   border: 4px solid black;
+   max-width: 90%;
+   margin: 1% auto;
+   color: black;
+   font-weight: bold;
+ }
+
+ .inputfile {
+   width: 0px;
+   height: 0px;
+   opacity: 0;
+   overflow: hidden;
+   position: absolute;
+   z-index: -1;
+ }
+
+ .inputfile+label {
+   border: 2px solid rgba(0, 128, 0, 0.815);
+   color: black;
+   border-radius: 10px;
+ }
+
+ .inputfile:focus+label,
+ .inputfile+label:hover {
+
+   color: black;
+   background-color: rgba(0, 128, 0, 0.815);
+   border-radius: 10px;
+ }
+
+ .inputfile+label {
+   cursor: pointer;
+   /* "hand" cursor */
+ }
+
+ .file_create {
+  box-shadow: 0px 0px 0px white;
+   color: black;
+   font-weight: bold;
+   border-radius: 10px;
+   background-color: white;
+   border: 2px solid rgba(0, 128, 0, 0.815);
+   color: black;
+   border-radius: 10px;
+
+ }
+
+ .file_create:hover {
+   color: black;
+   background-color: rgba(0, 128, 0, 0.815);
+ }
+ .control{
+  display:none;
+ }
+ .file_create:click, .control{
+  display:block;
+ }
+ .first {
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: space-around;
+   padding: 0;
+   margin: 0;
+   list-style: none;
+   vertical-align: middle;
+
+
+ }
+
+ #child {
+   font-size: 200%;
+   position: relative;
+   display: block;
+   margin: auto;
+   text-align: center;
+   margin-right: 20px;
+   margin-left: 20px;
+
+ }
+
+ @media screen and (max-width: 900px) {
+   #child {
+     margin-right: 30px;
+     margin-left: 30px;
+   }
+ }
